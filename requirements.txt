@@ -1,0 +1,10 @@
+langchain
+langchain_openai
+langchainhub
+langchainhub
+openai
+python-dotenv
+requests
+chromadb
+llama_index
+streamlit
