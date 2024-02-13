@@ -7,8 +7,8 @@ from Tutor import PreLabReport, questions, rubrics
 # Streamlit app
 st.title("Pre-lab Report Assistant")
 
-# make a field to input the API key
-api_key = st.text_input("API Key")
+# make a field to input the API ke. It's a password and should be hidden
+api_key = st.text_input("API Key", type="password")
 os.environ["OPENAI_API_KEY"] = api_key
 
 # Get the student name and a student ID in two text inputs side by side
