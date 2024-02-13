@@ -7,10 +7,9 @@ from Tutor import PreLabReport, questions, rubrics
 # Streamlit app
 st.title("Pre-lab Report Assistant")
 
-# make new container to store scratch
-st.write(
-    """Hi! I am the Lab Report Assistant for the Lab: Determination of the Molar Mass of an Unknown Acid through Acid-Base Titration. Please upload your lab report and I will guide you through the rubric and help you improve your report. Let me know when you're ready!"""
-)
+# make a field to input the API key
+api_key = st.text_input("API Key")
+os.environ["OPENAI_API_KEY"] = api_key
 
 # Get the student name and a student ID in two text inputs side by side
 # make these fields required
