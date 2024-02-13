@@ -2,7 +2,7 @@ import os
 import streamlit as st
 
 #import RubricGuide
-from prelabTutor import PreLabReport, questions, rubrics
+from Tutor import PreLabReport, questions, rubrics
 
 # Streamlit app
 st.title("Pre-lab Report Assistant")
